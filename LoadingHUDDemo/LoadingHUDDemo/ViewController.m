@@ -28,7 +28,7 @@
     
     [MOLoadingHUD showHUD];
     
-    
+    // 测试按钮
     UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
     button.frame = CGRectMake(0, 0, 40, 30);
     [button setTitle:@"隐藏" forState:UIControlStateNormal];
