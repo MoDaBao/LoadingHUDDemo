@@ -222,8 +222,7 @@
             [self checkAnimation];// 做打勾动画
         }];
     } else if ([[anim valueForKey:@"animationName"]isEqualToString:@"checkAnimation"]) {
-        NSLog(@"xxx");
-        _animating = NO;
+        
     }
 }
 
@@ -249,9 +248,7 @@
             [_circleView.layer addAnimation:radiusAnimation forKey:@"CornerRadiusExpandAnim"];
         }];
     }  else if ([[anim valueForKey:@"animationName"]isEqualToString:@"checkAnimation"]) {
-        for (CALayer *sublayer in _circleView.layer.sublayers) {
-            [sublayer removeFromSuperlayer];
-        }
+        _animating = NO;
     }
 }
 
